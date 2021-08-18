@@ -31,6 +31,14 @@
     left: 20%;
 }
 
+#title{
+  font-size: 12px;
+}
+
+#daysTo{
+  font-size: 8px;
+}
+
 .progressBarMain{
   margin: 0.6rem 0;
   display: flex;
