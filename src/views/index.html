@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang='pt_br'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1199FF">
+    
+    <title>LoveYou ❤</title>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/partials/page-landing.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    
+</head>
+
+<body id='page-landing'>
+    <div class='circle1'></div>
+    <div class='circle2'></div>
+    <div class='glass'>
+        <header>
+            <h1>Estamos juntos à</h1>
+            <h1 id='days'></h1>
+            <h2 id='daysTo'></h2>
+        </header>
+        
+        <section class='progressBarMain'>
+            <div class='progressBar'>
+              <div class='correntProgress' id='correntProgress'></div>
+            </div>
+            <p id='progressBarText'></p>
+        </section>
+        <section id='monthsTogether'>
+            <div id='pastMonth' class='month'>
+                <h2></h2>
+                <p></p>
+            </div>
+            <div id='correntMonth' class='monthOnFocus'>
+                <h2></h2>
+                <p></p>
+            </div>
+            <div id='nextMonth' class='month'>
+                <h2></h2>
+                <p></p>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p>Made with Love ❤ From Me to You!</p>
+        <p class='sub'>"I feel okay when i see you smile"</p>
+        <p class='sub'>"I see forever in your eyes"</p>
+    </footer>
+
+    <script>
+
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        const today = new Date().getTime();
+        const date_ini = new Date(`March 06 2021 00:00:00 `).getTime();
+
+        function countDays(){
+            const time = today - date_ini;
+            const timeInDays = Math.floor(time/day)
+
+            var days = document.querySelector('h1#days')
+
+            days.innerHTML = timeInDays + ' dias'
+            return(timeInDays)
+        } countDays()
+
+        function daysTo(){
+            const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
+            const date_twoY = new Date(`March 06 2023 00:00:00`).getTime();
+
+            const time3 = date_oneY - today
+            const timeInDays2 = Math.floor(time3/day)
+
+            
+            var daysTo = document.querySelector('h2#daysTo')
+            
+            daysTo.innerHTML = 'Faltam ' + timeInDays2 + ' dias para fazer-mos 1 ano juntos!'
+        } daysTo()
+        
+
+        function progress(){
+            const today = new Date().getTime();
+            const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
+            const days = date_oneY - today
+            
+            const time = Math.floor(days/day)
+            const percent = Math.floor(time/365 * 100)
+            
+            const progress = 100 - percent
+            
+            var progressBar = document.querySelector('div#correntProgress')
+            var progressBarText = document.querySelector('p#progressBarText')
+
+            progressBar.style.width = `${progress}%`
+            progressBarText.innerHTML = progress + '%'
+
+            return(progress)
+        } progress()
+
+        function months(){
+            const today = new Date().getTime();
+            const dateOne = new Date(`April 06 2021 00:00:00 `).getTime();
+            const dateTwo = new Date(`May 06 2021 00:00:00 `).getTime();
+            const dateTree = new Date(`June 06 2021 00:00:00 `).getTime();
+            const dateFour= new Date(`July 06 2021 00:00:00 `).getTime();
+            const dateFive = new Date(`August 06 2021 00:00:00 `).getTime();
+            const dateSix = new Date(`September 06 2021 00:00:00 `).getTime();
+            const dateSeven = new Date(`October 06 2021 00:00:00 `).getTime();
+            const dateHeight = new Date(`November 06 2021 00:00:00 `).getTime();
+            const dateNine = new Date(`December 06 2021 00:00:00 `).getTime();
+            const dateTen = new Date(`January 06 2022 00:00:00 `).getTime();
+            const dateEleven = new Date(`February 06 2022 00:00:00 `).getTime();
+
+
+            const pastMonth = document.querySelector('div#pastMonth')
+            const correntMonth = document.querySelector('div#correntMonth')
+            const nextMonth = document.querySelector('div#nextMonth')
+
+            if(today <= dateTwo){
+                pastMonth.childNodes[1].innerHTML = '1 mês de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/04/2021'
+
+                correntMonth.childNodes[1].innerHTML = '2 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/05/2021'
+
+                nextMonth.childNodes[1].innerHTML = '3 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/06/2021'
+
+            } else if(today <= dateTree){
+                pastMonth.childNodes[1].innerHTML = '2 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/05/2021'
+
+                correntMonth.childNodes[1].innerHTML = '3 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/06/2021'
+
+                nextMonth.childNodes[1].innerHTML = '4 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/07/2021'
+            } else if(today <= dateFour){
+                pastMonth.childNodes[1].innerHTML = '3 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/06/2021'
+
+                correntMonth.childNodes[1].innerHTML = '4 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/07/2021'
+
+                nextMonth.childNodes[1].innerHTML = '5 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/08/2021'
+
+            } else if(today <= dateFive){
+                pastMonth.childNodes[1].innerHTML = '4 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/07/2021'
+
+                correntMonth.childNodes[1].innerHTML = '5 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/08/2021'
+
+                nextMonth.childNodes[1].innerHTML = '6 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/09/2021'
+
+            } else if(today <= dateSix){
+                pastMonth.childNodes[1].innerHTML = '5 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/08/2021'
+
+                correntMonth.childNodes[1].innerHTML = '6 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/09/2021'
+
+                nextMonth.childNodes[1].innerHTML = '7 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/10/2021'
+
+            } else if(today <= dateSeven){
+                pastMonth.childNodes[1].innerHTML = '6 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/09/2021'
+
+                correntMonth.childNodes[1].innerHTML = '7 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/10/2021'
+
+                nextMonth.childNodes[1].innerHTML = '8 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/11/2021'
+
+            } else if(today <= dateHeight){
+                pastMonth.childNodes[1].innerHTML = '7 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/10/2021'
+
+                correntMonth.childNodes[1].innerHTML = '8 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/11/2021'
+
+                nextMonth.childNodes[1].innerHTML = '9 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/12/2021'
+
+            } else if(today <= dateNine){
+                pastMonth.childNodes[1].innerHTML = '8 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/11/2021'
+
+                correntMonth.childNodes[1].innerHTML = '9 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/12/2021'
+
+                nextMonth.childNodes[1].innerHTML = '10 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/01/2022'
+
+            } else if(today <= dateTen){
+                pastMonth.childNodes[1].innerHTML = '9 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/12/2021'
+
+                correntMonth.childNodes[1].innerHTML = '10 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/01/2022'
+
+                nextMonth.childNodes[1].innerHTML = '11 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/02/2022'
+
+            } else if(today <= dateEleven){
+                pastMonth.childNodes[1].innerHTML = '10 meses de namoro'
+                pastMonth.childNodes[3].innerHTML = '06/01/2022'
+
+                correntMonth.childNodes[1].innerHTML = '11 meses de namoro'
+                correntMonth.childNodes[3].innerHTML = '06/02/2022'
+
+                nextMonth.childNodes[1].innerHTML = '12 meses de namoro'
+                nextMonth.childNodes[3].innerHTML = '06/03/2022'
+            }
+            
+        } months()
+
+    </script>
+</body>
+</html>

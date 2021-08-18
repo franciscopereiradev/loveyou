@@ -1,0 +1,53 @@
+:root{
+    /*Cores*/
+    --title: #f2f3f5;
+    --color-text-base: #e1e2e5;
+    --text-secondary: #c1c2c5;
+    --wallpaper: rgb(255, 92, 0);
+    --wallpaper-secondary: rgb(0, 102, 255);
+    --background: #f2f3f5;
+    --background-secondary: #fff;
+
+
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea{
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base)
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--color-text-base);
+}
+
+@media (min-width: 700px){
+    :root {
+        font-size: 62.5%;
+    }
+}
