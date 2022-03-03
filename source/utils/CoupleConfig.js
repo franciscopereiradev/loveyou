@@ -73,37 +73,39 @@ export default function CoupleConfig({session}){
                 
             }
             if(error) throw error
-            function displayAlert(){
-                document.getElementById('alert').style.top= '10px'
+            // function displayAlert(){
+            //     document.getElementById('alert').style.top= '10px'
                 
-                setTimeout(function(){
-                    document.getElementById('alert').style.top= '-150px'
-                }, 3000)
-            } displayAlert()
+            //     setTimeout(function(){
+            //         document.getElementById('alert').style.top= '-150px'
+            //     }, 3000)
+            // } displayAlert()
+            alert('Sucess - Profile updated')
             // window.location.href = './'
 
         } catch (error) {
-            function displayAlert(){
-                document.getElementById('error').style.top= '10px'
+            // function displayAlert(){
+            //     document.getElementById('error').style.top= '10px'
                 
-                setTimeout(function(){
-                    document.getElementById('error').style.top= '-150px'
-                },3000)
-            } displayAlert()
+            //     setTimeout(function(){
+            //         document.getElementById('error').style.top= '-150px'
+            //     },3000)
+            // } displayAlert()
+            alert('Error - Something went wrong, try again!')
         } finally{
             setLoading(false)
         }
     }
     return(
         <div className='container'>
-            <div id='alert' className={stylesAlerts.alert} >
+            {/* <div id='alert' className={stylesAlerts.alert} >
                     <h2>Sucess</h2>
                     <p>Your data was been updated</p>
             </div>
             <div id='error' className={stylesAlerts.alert}>
                 <h2>Error</h2>
                 <p>Something went wrong, try again!</p>
-            </div>
+            </div> */}
             <div id='errorWhoAreYou' className={stylesAlerts.alert}>
                 <h2>Error</h2>
                 <p>Pick who are using the app on this device!</p>

@@ -23,8 +23,7 @@
 }
 .button{
     transition: 500ms;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
