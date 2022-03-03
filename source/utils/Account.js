@@ -76,7 +76,7 @@ export default function Account({ session }){
             //         document.getElementById('alert').style.top= '-150px'
             //     }, 3000)
             // } displayAlert() 
-            alert(`Sucess - Profile updated`)
+            alert('Sucess - Profile updated')
         } catch (error) {
             // function displayAlert(){
             //     document.getElementById('error').style.top= '10px'
@@ -85,7 +85,7 @@ export default function Account({ session }){
             //         document.getElementById('error').style.top= '-150px'
             //     },3000)
             // } displayAlert()
-            alert(`Error - Something went wrong, try again!`)
+            alert('Error - Something went wrong, try again!')
         } finally{
             setLoading(false)
         }
