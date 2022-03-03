@@ -120,23 +120,25 @@ export default function Main({ session }){
             if(error){
                 throw error
             }
-            function displayAlert(){
-                document.getElementById('alert').style.top= '150px'
-                document.getElementById('alert').style.trnasition= '1s'
+            // function displayAlert(){
+            //     document.getElementById('alert').style.top= '150px'
+            //     document.getElementById('alert').style.trnasition= '1s'
 
-                setTimeout(function(){
-                    document.getElementById('alert').style.top= '-150px'
-                }, 3000)
-            } displayAlert() 
+            //     setTimeout(function(){
+            //         document.getElementById('alert').style.top= '-150px'
+            //     }, 3000)
+            // } displayAlert() 
+            alert(`Sucess - coupons updated!`)
         } catch (error) {
-            function displayAlert(){
-                document.getElementById('error').style.top= '150px'
-                document.getElementById('error').style.trnasition= '1s'
+            // function displayAlert(){
+            //     document.getElementById('error').style.top= '150px'
+            //     document.getElementById('error').style.trnasition= '1s'
 
-                setTimeout(function(){
-                    document.getElementById('error').style.top= '-150px'
-                },3000)
-            } displayAlert()
+            //     setTimeout(function(){
+            //         document.getElementById('error').style.top= '-150px'
+            //     },3000)
+            // } displayAlert()
+            alert('Error - Something went wrong, try again!')
 
         } finally{
             // setLoading(false)

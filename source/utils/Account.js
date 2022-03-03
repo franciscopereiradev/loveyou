@@ -57,33 +57,35 @@ export default function Account({ session }){
             } else if(chooseUser.value == 'username2'){
                 sessionStorage.setItem('userCorrent', username2)
             } else{
-                function displayAlert(){
-                    document.getElementById('error').style.top= '10px'
+                // function displayAlert(){
+                //     document.getElementById('error').style.top= '10px'
     
-                    setTimeout(function(){
-                        document.getElementById('error').style.top= '-150px'
-                    },3000)
-                } displayAlert()
+                //     setTimeout(function(){
+                //         document.getElementById('error').style.top= '-150px'
+                //     },3000)
+                // } displayAlert()
             }
 
             if(error) {
                 throw error
             }
-            function displayAlert(){
-                document.getElementById('alert').style.top= '10px'
+            // function displayAlert(){
+            //     document.getElementById('alert').style.top= '10px'
 
-                setTimeout(function(){
-                    document.getElementById('alert').style.top= '-150px'
-                }, 3000)
-            } displayAlert() 
+            //     setTimeout(function(){
+            //         document.getElementById('alert').style.top= '-150px'
+            //     }, 3000)
+            // } displayAlert() 
+            alert(`Sucess - Profile updated`)
         } catch (error) {
-            function displayAlert(){
-                document.getElementById('error').style.top= '10px'
+            // function displayAlert(){
+            //     document.getElementById('error').style.top= '10px'
 
-                setTimeout(function(){
-                    document.getElementById('error').style.top= '-150px'
-                },3000)
-            } displayAlert()
+            //     setTimeout(function(){
+            //         document.getElementById('error').style.top= '-150px'
+            //     },3000)
+            // } displayAlert()
+            alert(`Error - Something went wrong, try again!`)
         } finally{
             setLoading(false)
         }
@@ -91,14 +93,14 @@ export default function Account({ session }){
     
     return(
         <div className={styles.footer}>
-             <div id='alert' className={stylesAlerts.alert} >
+             {/* <div id='alert' className={stylesAlerts.alert} >
                     <h2>Sucess</h2>
                     <p>Profile updated</p>
             </div>
             <div id='error' className={stylesAlerts.alert}>
                 <h2>Error</h2>
                 <p>Something went wrong, try again!</p>
-            </div>
+            </div> */}
                 <input typeof='text' value={username || ''}  onChange={(e, any) => setUsername(e.target.value)}  placeholder={username || 'username'}/>
                 <input typeof='text' value={username2 || ''}  onChange={(e, any) => setUsername2(e.target.value)}  placeholder={username2 || 'username2'}/>
                 <p>Who are you?</p>
