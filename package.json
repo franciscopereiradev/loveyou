@@ -1,28 +1,27 @@
 {
-  "name": "P_LUCC_2.0",
-  "version": "1.0.0",
-  "description": "",
-
+  "name": "loveyou",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "node": "^16.6.1",
-    "nodemon": "^2.0.12",
-    "nunjucks": "^3.2.3",
-    "sqlite-async": "^1.1.0",
-    "sqlite3": "^5.0.2"
+    "@chakra-ui/react": "^1.7.3",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@supabase/supabase-js": "^1.28.5",
+    "framer-motion": "^4.1.17",
+    "next": "^12.0.8-canary.11",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
+    "supabase": "^0.5.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/franciscopereiradev/loveyou.git"
-  },
-  "author": "Francisco Pereira",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/franciscopereiradev/loveyou/issues"
-  },
-  "homepage": "https://github.com/franciscopereiradev/loveyou#readme"
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  }
 }

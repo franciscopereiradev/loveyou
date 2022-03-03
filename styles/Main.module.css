@@ -1,0 +1,187 @@
+.header{
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100vw;
+    max-width: 700px;
+    height: 185px;
+    border-bottom-left-radius: 33px;
+    background: linear-gradient(135deg, #f14977, #ffa572);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:20px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.profilePhoto{
+    width: 40px;
+    height: 40px;
+    /* margin: 20px 0 0 20px; */
+    border-radius: 50%;
+    background: #f2f3f5;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+.profile > a > h1{
+    text-align: left;
+    font-weight: 500;
+    color: #f2f3f5;
+}
+.menu > p{
+    color: #fff;
+    /* font-size: 42px; */
+    cursor: pointer;
+}
+.days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 20px;
+    height: 120px;
+    background: rgba(206, 206, 206, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: solid 1px rgba(255,255,255, 0.3);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+}
+.days > h1{
+    color: #f2f3f5;
+}
+.days > p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.mainProgressBar{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.progressBar{
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border-radius: 25px;
+    border-top: solid 1px rgba(255,255,255, 0.5);
+    border-left: solid 1px rgba(255,255,255, 0.5);
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.25);
+    backdrop-filter: blur(1px);
+}
+.correntProgress{
+    /* width: 80%; */
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff0046, #ffa572);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+.mainProgressBar > p{
+    font-size: 18px;
+    position: absolute;
+    color: #fff;
+}
+.main{
+    height: auto;
+    width: 100vw;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px 0 0 0 ;
+}
+.main > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.month{
+    height: 60px;
+    width: 90%;
+    margin: 5px;
+    background: rgba(244,97,117,0.6);
+    border-radius: 15px;
+    border: solid 1px var(--border2);
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.25)
+}
+
+.prendaBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.prendaDiv{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+}
+
+.prendaDivBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 310px;
+    height: 150px;
+    border-radius: 15px;
+    margin:10px 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+}
+
+.prendaButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(255,0,0,0.35);
+    border-radius: 15px;
+}
+
+.prendaButton > p, .prendaConfirmButton > p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.confirmButtonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prendaConfirmButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.35);
+    border-radius: 15px;
+    margin: 20px;
+}

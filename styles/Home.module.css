@@ -1,0 +1,115 @@
+
+
+
+.header{
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoBackground{
+  /* position: fixed; */
+  margin-top: -250px;
+  /* width: 60vw; */
+  /* margin-left: 28vw; */
+  height: 200px;
+  /* background: linear-gradient(0deg, var(--background2), var(--background1)); */
+  transform: rotate(-45deg);
+  border-radius: 100px;
+}
+
+.logo{
+
+  border-radius: 50%;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.25);
+}
+
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title > h1{
+  color: var(--title);
+}
+
+.buttons{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  position: fixed;
+  bottom: 100px;
+}
+
+.loginBtn{
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  margin-left: -330px; 
+  margin-top: 50px;
+  transform: rotate(-45deg);
+  background: rgba(191,62,98,0.7);
+  border: solid 1px var(--border);
+  border-radius: 50px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.25);
+}
+
+.loginBtn > button{
+  transform: rotate(45deg);
+  margin-left: 95px;
+  margin-top: 12px;
+  height: 30px;
+  width: 100px;
+}
+
+.loginBtn > button > a{
+  color: #f2f3f5;
+}
+
+.registerBtn{
+  width: 220px;
+  height: 245px;
+
+  position: absolute;
+
+  margin-left: 200px;
+
+  border-radius: 50px;
+  transform: rotate(-35deg);
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.25);
+  background: linear-gradient(0deg,rgb(224,224,224), rgb(16,144,193));
+}
+
+.registerBtn > button{
+  width: 140px;
+  height: 50px;
+
+  transform: rotate(35deg);
+
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.registerBtn > button > div{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255, 0.5);
+
+  border: solid 1px var(--border);
+  border-radius: 20px;
+  
+}
+
