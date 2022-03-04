@@ -279,7 +279,7 @@ export default function Main({ session }){
                     </div>
                     <div className={styles.confirmButtonDiv}>
                         <button className={styles.prendaConfirmButton} onClick={() => updateProfile({p1, p2, p3, p4, p5, p6, p7})}>
-                            <p>Confirm</p>
+                            <p>Save</p>
                         </button>
                     </div>
                 </div>
