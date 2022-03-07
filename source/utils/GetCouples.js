@@ -41,7 +41,7 @@ export function GetCouples(){
     let year_next = year_initial
     do{
         year_next += 1
-    } while (year_next < today_year)
+    } while (year_next <= today_year)
 
     const date_ini = new Date(`${date_initial}, ${year_initial}`).getTime();
 

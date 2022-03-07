@@ -110,7 +110,7 @@ export default function CoupleConfig({session}){
                 <h2>Error</h2>
                 <p>Pick who are using the app on this device!</p>
             </div>
-            <title>Love You - Connect</title>
+            <title>Love You - Account</title>
             <div className={styles.header}>
                 <div className={stylesTitleBar.title}>
                     <p><a href='./'><HiArrowLeft /></a></p>

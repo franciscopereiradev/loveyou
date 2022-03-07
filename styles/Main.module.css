@@ -82,6 +82,7 @@
 }
 .correntProgress{
     /* width: 80%; */
+    min-width: 25px;
     height: 100%;
     border-radius: 25px;
     background: linear-gradient(90deg, #ff0046, #ffa572);
@@ -90,7 +91,7 @@
 .mainProgressBar > p{
     font-size: 18px;
     position: absolute;
-    color: #fff;
+    color: (--text);
 }
 .main{
     height: auto;
