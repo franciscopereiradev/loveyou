@@ -6,7 +6,7 @@
     max-width: 700px;
     height: 185px;
     border-bottom-left-radius: 33px;
-    background: linear-gradient(135deg, #f14977, #ffa572);
+    background: rgba(255,0,0,0.35);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 .top{

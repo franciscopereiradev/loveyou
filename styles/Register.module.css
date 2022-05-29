@@ -38,6 +38,7 @@
 .footer{
     display: flex;
     position: absolute;
+    margin-top: 10px;
     bottom: 10px;
 }
 .footer > a{
