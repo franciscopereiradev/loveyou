@@ -38,8 +38,7 @@
 .footer{
     display: flex;
     position: absolute;
-    margin-top: 10px;
-    bottom: 10px;
+    margin-top: 20px;
 }
 .footer > a{
     font-size: 12px;
