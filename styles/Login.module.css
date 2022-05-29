@@ -34,7 +34,7 @@
 
 .footer{
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     margin-top: 20px;
 }
 
