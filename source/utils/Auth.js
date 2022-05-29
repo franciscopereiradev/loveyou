@@ -106,11 +106,11 @@ export default function Auth(){
                 <button className={styles.button} onClick={e => {e.preventDefault(); signUp(email, password)}}>
                     <h1>Register</h1>
                 </button>
-            </div>
-            <div className={styles.footer}>
-                <a href='./login'> 
-                    Already have an account?
-                </a>
+                <div className={styles.footer}>
+                    <a href='./login'> 
+                        Already have an account?
+                    </a>
+                </div>
             </div>
 
 
