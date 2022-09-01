@@ -32,9 +32,8 @@ export default function Main({ session }){
            
             let{ data, error, status } = await supabase
                 .from('profiles')
-                .select('username, username2, 
+                .select('username, username2')
 //                         p1, p2, p3, p4, p5, p6, p7
-                        ')
                 .eq('id', user.id)
                 .single()
                 
