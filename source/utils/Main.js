@@ -178,7 +178,7 @@ export default function Main({ session }){
                     <h2>Error</h2>
                     <p>Something went wrong, try again!</p>
                 </div>
-                <div className={styles.main}>
+//                 <div className={styles.main}>
                 {/* <Months/> */}
                 {/* <div className={styles.folder}> */}
                     {/* <h2>Events</h2> */}
