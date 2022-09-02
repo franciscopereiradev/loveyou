@@ -193,7 +193,7 @@ export default function Main({ session }){
                     {/* <button></button> */}
                 {/* </div> */}
                 <div className={styles.folder}>
-                    <h2>Prenda de 1 ano</h2>
+                    <h2>Coupons</h2>
                     <div className={styles.prendaBox}>
                         <div className={styles.prendaDiv}>
                             <div>
