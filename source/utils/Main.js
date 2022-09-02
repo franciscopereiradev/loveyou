@@ -12,13 +12,13 @@ export default function Main({ session }){
 
     const [username, setUsername] = useState(null)
     const [username2, setUsername2] = useState(null)
-//     const [p1, setP1] = useState(null)
-//     const [p2, setP2] = useState(null)
-//     const [p3, setP3] = useState(null)
-//     const [p4, setP4] = useState(null)
-//     const [p5, setP5] = useState(null)
-//     const [p6, setP6] = useState(null)
-//     const [p7, setP7] = useState(null)
+    const [p1, setP1] = useState(null)
+    const [p2, setP2] = useState(null)
+    const [p3, setP3] = useState(null)
+    const [p4, setP4] = useState(null)
+    const [p5, setP5] = useState(null)
+    const [p6, setP6] = useState(null)
+    const [p7, setP7] = useState(null)
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
