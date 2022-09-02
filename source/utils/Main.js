@@ -144,7 +144,7 @@ export default function Main({ session }){
 //         } finally{
 //             // setLoading(false)
 //         }
-    }
+//     }
     const sessionStorageUser = localStorage.getItem('userCorrent')
     let userCorrent
     if(sessionStorageUser === username || sessionStorageUser === username2){ userCorrent = sessionStorageUser}
